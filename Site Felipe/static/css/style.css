@@ -1,0 +1,154 @@
+
+:root{
+    font-size: 16px;
+    font-family: poppins;
+}
+body{
+    color: black;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+canvas{
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: -1;
+}
+.navbar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	width: 100px;
+	cursor: pointer;
+	margin: 20px 30px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	display: inline-block;
+    padding-right: 2%;
+}
+.text {
+	display: flex;
+	height: 100%;
+	align-items: center;
+  }
+.img{
+    width: 2.9rem;
+}
+.glass{
+    margin: 1rem 4rem;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1.5px);
+}
+.content{
+	font-family: monospace;
+    margin: auto;
+	color: white;
+    padding-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#title{
+	text-align: center;
+	text-transform: uppercase;
+	font-size : 4em;
+}
+
+#text{
+	text-align: justify;
+	font-size : 1.5em;
+    
+}
+.button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size : 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    font-weight: 800;
+    padding: 2%;
+}
+span{
+    padding: 10px 30px;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 25px;
+    backdrop-filter: blur(1px);
+}
+span:hover{
+    background: var(--clr);
+    letter-spacing: 5px;
+    box-shadow: 0 0 35px var(--clr);
+}
+.Toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3a3a3a;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1);
+    text-decoration: none;
+    color: #fff;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.5rem;
+    opacity: 85%;
+}
+.Toolbar button{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+@media only screen and (max-width:600px){
+    .logo{
+        width: 3.5rem;
+    }
+    .img{
+        width: 2.5rem;
+    }
+    .glass{
+        margin: 0.5rem 1.5rem;
+    }
+    #title{
+        font-size : 2.2rem;
+    }
+    
+    #text{
+        font-size : 1rem;
+    }
+    .Toolbar button{
+        font-size: 1rem;
+    }
+    .Toolbar{
+        font-size: 1rem;
+    }
+    .button{
+        font-size: 1rem;
+        margin: 5%;
+    }
+    nav ul li{
+        margin-right: 8%;
+    }
+}
