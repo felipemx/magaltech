@@ -32,9 +32,13 @@ const draw = () => {
 
 setInterval(draw, 20);
 
-window.addEventListener("resize", () => location.reload());
+window.addEventListener("resize", () => {
+	width = canvas.width = window.innerWidth;
+	height = canvas.height = window.innerHeight;
+	col = width / font;
+  });
 
-const chars = "-_—→↓↑←0123456789abcdefghijklmnopqrstuvwxtz";
+const chars = "-_—→↓↑←0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZ";
 
 var Glitch = function(selector, index, numberOfGlitchedLetter, timeGlitch, timePerLetter, timeBetweenGlitch){
 	this.selector = selector;
