@@ -34,7 +34,7 @@ setInterval(draw, 20);
 
 window.addEventListener("resize", () => location.reload());
 
-const chars = "☺Σ×Π#-_¯—→↓↑←0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZ";
+const chars = "-_—→↓↑←0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZ";
 
 var Glitch = function(selector, index, numberOfGlitchedLetter, timeGlitch, timePerLetter, timeBetweenGlitch){
 	this.selector = selector;
